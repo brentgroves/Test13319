@@ -8,14 +8,14 @@ var buffer = require('buffer');
 var client = udp.createSocket('udp4');
 
 //                    1234567890
-// var CNC103Frame = `     1, 1`
+var CNC103Frame = `     1, 1`
 //              1234567890
-// CNC103Frame += `         1`
-// var data = Buffer.from(CNC103Frame);
+CNC103Frame += `         1`
+var data = Buffer.from(CNC103Frame);
 
-var data=Buffer.from('2514', 'hex');  //DC2
+// var data=Buffer.from('2515', 'hex');  //DC2
 
-client.send(data,2222,'localhost',function(error){
+client.send(data,2222,'10.1.0.59',function(error){
 //  client.send(data,2221,'localhost',function(error){
   if(error){
     client.close();

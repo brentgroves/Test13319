@@ -16,18 +16,6 @@ server.on('error',function(error){
 server.on('message',function(msg,info){
   console.log('Data received from client : ' + msg.toString());
   console.log('Received %d bytes from %s:%d\n',msg.length, info.address, info.port);
-
-//sending msg
-//server.send(msg,info.port,'localhost',function(error){
-server.send(msg,info.port,'10.1.0.59',function(error){
-    if(error){
-    client.close();
-  }else{
-    console.log('Data sent !!!');
-  }
-
-});
-
 });
 
 //emits when socket is ready and listening for datagram msgs

@@ -18,8 +18,9 @@ server.on('message',function(msg,info){
   console.log('Received %d bytes from %s:%d\n',msg.length, info.address, info.port);
 
 //sending msg
-server.send(msg,info.port,'localhost',function(error){
-  if(error){
+//server.send(msg,info.port,'localhost',function(error){
+server.send(msg,info.port,'10.1.0.59',function(error){
+    if(error){
     client.close();
   }else{
     console.log('Data sent !!!');
@@ -47,7 +48,8 @@ server.on('close',function(){
 
 server.bind(2222);
 
+/*
 setTimeout(function(){
 server.close();
 },30000);
-
+*/

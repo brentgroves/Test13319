@@ -15,7 +15,7 @@ var data = Buffer.from(CNC103Frame);
 
 // var data=Buffer.from('2515', 'hex');  //DC2
 
-client.send(data,2222,'10.1.0.59',function(error){
+client.send(data,2222,'10.1.1.42',function(error){
 //  client.send(data,2221,'localhost',function(error){
   if(error){
     client.close();

@@ -8,7 +8,7 @@ var buffer = require('buffer');
 var client = udp.createSocket('udp4');
 
 //               1234567890
-var TestFrame = `     99, 1` 
+var TestFrame = `      2, 1` 
 //            1234567890
 TestFrame += `        11` //VC1 make greater than increment_by 
 TestFrame += `        21` //VC21

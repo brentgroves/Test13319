@@ -8,10 +8,11 @@ var buffer = require('buffer');
 var client = udp.createSocket('udp4');
 
 //               1234567890
-var TestFrame = `      2,50` 
+var TestFrame = `      2,60` 
 //            1234567890
-TestFrame += `         1` //VC1 
-TestFrame += `         1` //Pallet #1
+TestFrame += `        50` //Command Variable 
+TestFrame += `         1` //Pallet_No
+TestFrame += `         1` //Tool_No
 
 
 var data = Buffer.from(TestFrame);
@@ -28,10 +29,11 @@ client.send(data,2222,'172.20.88.16',function(error){
 });
 
 //               1234567890
-TestFrame = `      2,51` 
+var TestFrame = `      2,60` 
 //            1234567890
-TestFrame += `         1` //VC1 
-TestFrame += `         1` //Pallet #1
+TestFrame += `        51` //Command Variable 
+TestFrame += `         1` //Pallet_No
+TestFrame += `         1` //Tool_No
 
 client.send(data,2222,'172.20.88.16',function(error){
   //  client.send(data,2221,'localhost',function(error){

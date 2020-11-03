@@ -34,6 +34,7 @@ var TestFrame = `      2,60`
 TestFrame += `        51` //Command Variable 
 TestFrame += `         1` //Pallet_No
 TestFrame += `         1` //Tool_No
+data = Buffer.from(TestFrame);
 
 client.send(data,2222,'172.20.88.16',function(error){
   //  client.send(data,2221,'localhost',function(error){

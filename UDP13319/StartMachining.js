@@ -25,11 +25,7 @@ var data = Buffer.from(TestFrame);
 
 client.send(data,2222,'172.20.88.16',function(error){
 //  client.send(data,2221,'localhost',function(error){
-  if(error){
     client.close();
-  }else{
-    console.log('Data sent !!!');
-  }
 });
 
   

@@ -14,7 +14,7 @@ END_MACHINING_NO_TIMER=52
 //               1234567890
 var TestFrame = `      2,60` 
 //            1234567890
-TestFrame += `        51` //End Machining
+TestFrame += `        52` //END_MACHINING_NO_TIMER=52
 TestFrame += `         1` //Pallet_No
 TestFrame += `         1` //Tool_Var
 TestFrame += `       100` //Tool_Counter

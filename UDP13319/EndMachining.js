@@ -17,7 +17,7 @@ var TestFrame = `      2,60`
 TestFrame += `        51` //End Machining
 TestFrame += `         1` //Pallet_No
 TestFrame += `         1` //Tool_Var
-TestFrame += `       100` //Tool_Counter
+TestFrame += `         2` //Tool_Counter
 
 data = Buffer.from(TestFrame);
 

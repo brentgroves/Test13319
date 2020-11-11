@@ -17,7 +17,7 @@ var TestFrame = `      2,60`
 TestFrame += `        50` //START_MACHINING
 TestFrame += `         1` //Pallet_No
 TestFrame += `         1` //Tool_Var
-TestFrame += `       100` //Tool_Counter
+TestFrame += `         0` //Tool_Counter
 
 
 var data = Buffer.from(TestFrame);

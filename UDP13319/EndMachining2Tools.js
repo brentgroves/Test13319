@@ -41,7 +41,7 @@ var TestFrame = `      2,60`
 //            1234567890
 TestFrame += `        51` //End Machining
 TestFrame += `         1` //Pallet_No
-TestFrame += `         9` //Tool_Var
+TestFrame += `         6` //Tool_Var
 TestFrame += BlockToolCounter;
 // TestFrame += `         2` //Tool_Counter
 /*
@@ -55,7 +55,30 @@ var data = Buffer.from(TestFrame);
 
 client.send(data,2222,'172.20.88.16',function(error){
   //  client.send(data,2221,'localhost',function(error){
-    client.close();
+ //   client.close();
 
   });
 
+//               1234567890
+TestFrame = `      2,60` 
+//            1234567890
+TestFrame += `        51` //End Machining
+TestFrame += `         1` //Pallet_No
+TestFrame += `        66` //Tool_Var
+TestFrame += BlockToolCounter;
+// TestFrame += `         2` //Tool_Counter
+/*
+	-- set @pTool_Var = 1;  -- Assembly_Key = 13, tool_Key = 1
+	set @pTool_Var = 12; -- REWORK Primary_tool_key 8,Alternate_Tool_Key = 9
+	-- set @pTool_Var = 22; -- REWORK tool_key 15
+	-- set @pTool_Var = 15; -- alt in use  Alternate_Tool_Key=12,Primary_Tool_key 13
+
+*/
+data = Buffer.from(TestFrame);
+
+client.send(data,2222,'172.20.88.16',function(error){
+  //  client.send(data,2221,'localhost',function(error){
+    client.close();
+
+  });
+  

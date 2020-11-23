@@ -41,7 +41,7 @@ var TestFrame = `      2,60`
 //            1234567890
 TestFrame += `        51` //End Machining
 TestFrame += `         1` //Pallet_No
-TestFrame += `         9` //Tool_Var
+TestFrame += `         8` //Tool_Var
 TestFrame += BlockToolCounter;
 // TestFrame += `         2` //Tool_Counter
 /*

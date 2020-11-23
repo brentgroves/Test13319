@@ -39,9 +39,9 @@ var TestFrame = `      2,60`;
 //            1234567890
 TestFrame += `        50`; //START_MACHINING
 TestFrame += `         1`; //Pallet_No
-TestFrame += `         9`; //Tool_Var
+TestFrame += `         8`; //Tool_Var
 TestFrame += BlockToolCounter;
-// TestFrame += `         0`; //Tool_Counter
+// TestFrame += `         8`; //Tool_Counter
 
 var data = Buffer.from(TestFrame);
 

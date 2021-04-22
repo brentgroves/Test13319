@@ -12,11 +12,14 @@
   "dependencies": {
     "@bgroves/common": "^1.2.0",
     "axios": "^0.21.1",
+    "dayjs": "^1.10.4",
     "ethernet-ip": "^1.2.5",
+    "exceljs": "^4.2.1",
     "form-data": "^4.0.0",
     "mariadb": "^2.4.0",
     "moment": "^2.27.0",
     "mqtt": "^4.2.3",
+    "node-datetime": "^2.1.2",
     "qs": "^6.9.6"
   }
 }
